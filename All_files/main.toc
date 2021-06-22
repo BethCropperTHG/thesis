@@ -1,0 +1,20 @@
+\contentsline {chapter}{Contents}{i}{dummy.1}%
+\contentsline {chapter}{List of Figures}{ii}{dummy.3}%
+\contentsline {chapter}{\numberline {1}Experimental Details}{1}{chapter.5}%
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.6}%
+\contentsline {section}{\numberline {1.2}Experimental Procedure}{1}{section.7}%
+\contentsline {subsection}{\numberline {1.2.1}Ion Source}{1}{subsection.8}%
+\contentsline {subsection}{\numberline {1.2.2}Tandem Accelerator}{2}{subsection.9}%
+\contentsline {subsection}{\numberline {1.2.3}Beam Delivery}{3}{subsection.12}%
+\contentsline {subsection}{\numberline {1.2.4}Targets}{3}{subsection.13}%
+\contentsline {subsection}{\numberline {1.2.5}The Q3D Spectrograph}{4}{subsection.16}%
+\contentsline {subsection}{\numberline {1.2.6}Focal Plane Detectors}{5}{subsection.21}%
+\contentsline {section}{\numberline {1.3}Experimental Considerations}{6}{section.24}%
+\contentsline {subsection}{\numberline {1.3.1}Momentum Matching}{6}{subsection.25}%
+\contentsline {subsection}{\numberline {1.3.2}Angle and Energy Selection}{7}{subsection.29}%
+\contentsline {subsection}{\numberline {1.3.3}Target Thickness}{8}{subsection.34}%
+\contentsline {subsection}{\numberline {1.3.4}Contaminants}{9}{subsection.37}%
+\contentsline {subsection}{\numberline {1.3.5}Magnetic Field Settings}{10}{subsection.39}%
+\vspace {2em}
+\vspace {2em}
+\contentsline {chapter}{Bibliography}{11}{dummy.40}%

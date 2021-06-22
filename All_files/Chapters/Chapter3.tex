@@ -1,0 +1,159 @@
+% Chapter Template
+
+\chapter{Direct Reactions} % Main chapter title
+
+\label{Chapter3} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+\lhead{Chapter 3. \emph{Direct Reactions}} % Change X to a consecutive number; this is for the header on each page - perhaps a shortened title
+
+
+\section{Introduction}
+
+Direct reactions are a way to probe nuclear structure. As the name suggests, they are one-step processes, where one reaction happens in a collision between a target and projectile nucleus. The alternative to a direct reaction is a compound reaction, where one or more intermediate states are created between the initial and final state.
+
+Direct reactions are more likely to happen in a glancing collision, i.e. the impact parameter of the collision is approximately equal to the nuclear radius. This is because the more time the projectile spends in or near the target, the more likely it will undergo multiple reactions. Because of the glancing nature of the collision, there is a smaller exchange of energy, and reaction products are scattered at forward angles to the beam. For comparison, in compound reactions, reaction products are emitted isotropically in the centre of mass frame, and are more likely to happen in collisions with small impact parameters.
+
+Direct reactions are denoted by A(a,b)B, where A and B are the target and recoil nuclei, and a and b are the projectile and ejectile nuclei. A and a are referred to as the incoming partition together denoted by $\alpha$, and B and b are the outgoing partition, denoted by $\beta$.
+
+This work discusses single nucleon transfer reactions (p,d) and (d,p) on neutrinoless double-beta decay candidate nuclei. Single nucleon transfer is useful to probe single particle structure, due to the excitation of only a single degree of freedom. The probability of a single nucleon transfer reaction occuring is given by Fermi's Golden rule,
+
+\begin{equation}
+\lambda = \frac{2 \pi}{\hbar} |V_{\beta \alpha}| \rho_{E_k}\mathrm{,}
+\end{equation}
+
+where $\rho_{E_k}$ is the density of final states, and $|V_{\beta \alpha}|$ is the matrix element for the transition, which depends on the overlap between initial and final states.
+
+\subsection{DWBA} \label{ssec:DWBA}
+
+The distorted-wave Born approximation (DWBA) is a model of scattering theory, and is the one that has been used to calculate cross-sections in this study. For a full derivation of DWBA, see Refs. \cite{satchler,glendenning}.
+
+The starting point is to consider the general cross-section for a reaction, 
+
+\begin{equation}
+\bigg ( \frac{\mathrm{d} \sigma}{\mathrm{d} \Omega} \bigg )_{\beta \alpha} = \frac{\mu_\alpha \mu_\beta}{(2 \pi \hbar)^2}  \frac{k_\alpha}{k_\beta} \mathit{T}_{\beta\alpha}^2\mathrm{,}
+\end{equation}
+
+where $k$ are the wavenumbers, representing the momenta, and $\mu$ are the reduced masses. $\mathit{T}_{\beta\alpha}$ is the transition matrix element for the reaction. This equation is related to Fermi's Golden Rule.
+
+\begin{equation}
+\mathit{T}_{\beta\alpha} =  \langle \Psi_\beta | V | \Psi_\alpha \rangle,
+\end{equation}
+
+where $\Psi_{\alpha, \beta}$ are the total wavefunctions for the partitions $\alpha$ and $\beta$. $V$ is the interaction potential.
+
+Initially, these $\Psi$ were modelled as plane waves. This reproduced the changing of the peak of the angular distribution of cross-sections with angle, but failed to reproduce the cross-sections accurately. In actuality, the potentials are distorted by the interaction with the target.
+
+The Born approximation is the treatment of the interaction between two nucleons being dominated by elastic scattering. Any other reaction removes flux from the outgoing elastic scattering channel. This is modelled using complex potentials, and is the application of first-order pertubation theory to scattering.
+
+For the DWBA approach, we begin by considering the wavefunction of internal states in a partition. For the (d,p) reaction we consider $\psi_\alpha$. This is separable such that
+
+\begin{equation} \label{eq:separable}
+\psi_\alpha = \psi_d(x_d) \psi_T(x_T)\mathrm{,}
+\end{equation}
+
+where $d$ pertains to the deuteron, $T$ pertains to the target, and $x$ are the internal co-ordinates.
+
+The total Hamiltonian $H$ can be separated into these internal co-ordinates, and the relative co-ordinates for the partition, such that
+
+\begin{equation} \label{eq:hamiltonian}
+H = H_\alpha + T_\alpha + V_\alpha\mathrm{,}
+\end{equation}
+
+where $H_\alpha$ is the internal Hamiltonian, $T_\alpha$ is the relative kinetic energy, and $V_\alpha$ is the interaction potential. 
+
+Similarly to modelling the shell model, an auxillary potential $U_\alpha$ is introduced, so that
+
+\begin{equation} \label{eq:residual}
+H = H_\alpha + T_\alpha + (V_\alpha - U_\alpha) + U_\alpha \mathrm{.}
+\end{equation}
+
+$U_\alpha$ is chosen to replicate elastic scattering, which leaves $V = V_\alpha - U_\alpha$ as an imaginary potential which removes flux from the elastic channel. Equations~\ref{eq:separable},~\ref{eq:hamiltonian}~and~\ref{eq:residual} can be found for the $\beta$ channel also.
+
+$V_\beta$ is the sum of the reaction of the outgoing proton with the target, and with the neutron. $U_\beta \approx V_{pT}$, so $V \approx V_{pn}$, where $V_{pt}$ and $V_{pn}$ are the interactions between the proton and target and proton and deuteron respectively.
+
+The total wavefunctions can be separated into a product of the internal and relative motion,
+
+\begin{equation}
+\Psi_{\alpha,\beta} = \psi_{\alpha,\beta}\chi_{\alpha,\beta}\mathrm{,}
+\end{equation}
+
+where $\chi_{\alpha,\beta}$ are distorted waves which are the solution to the homogeneous Schr{\"o}dinger equation
+
+\begin{equation}
+(H_{\alpha,\beta}-T_{\alpha,\beta}-V_{\alpha,\beta})\chi_{\alpha,\beta} = 0
+\end{equation} 
+
+The transition matrix element then becomes
+
+\begin{equation}
+\mathit{T}_{\beta\alpha} =  \langle \psi_R \psi_p \chi_\beta | V_{pn} | \psi_T \psi_d \chi_\alpha   \rangle\mathrm{,}
+\end{equation}
+
+where $R$ pertains to the residual nucleus.
+
+The wavefunction of the residual nucleus is equivalent to the wavefunction of the target with an extra neutron in a superposition of single-particle orbits,
+
+\begin{equation}
+\psi_R = \sum_{njl} \gamma_{njl} \phi_{njl} \psi_T \mathrm{,}
+\end{equation}
+
+where $\gamma_{njl}$ are probability amplitudes, $\phi_{njl}$ are the single-particle wavefunctions, and the sum is over the single-particle quantum numbers $n,j,l$. The deuteron with wavefunction $\psi_d$ is similarly a proton with a neutron orbiting in a different configuration of single-particle states $\sum_{n'j'l'}\phi_{n'j'l'}$.
+
+With this, the differential cross section is then
+
+\begin{equation}
+\bigg ( \frac{\mathrm{d} \sigma}{\mathrm{d} \Omega} \bigg )_{\beta \alpha} =\frac{\mu_\alpha \mu_\beta}{(2 \pi \hbar)^2}  \frac{k_\alpha}{k_\beta}  \sum_{njl} \sum_{n'j'l'} \gamma_{njl}^2\gamma_{n'j'l'}^2 |\langle  \phi_{njl} \chi_\beta | V_{pn} | \phi_{n'j'l'} \chi_\alpha  \rangle |^2\mathrm{.}
+\end{equation}
+
+For (d,p) and (p,d), $\gamma_{n'j'l'}$ is unity, because the deuteron only has one bound state. For other reactions this needs to be treated in more detail.  $\gamma_{njl}^2$ is the probability of finding the neutron in a particular single particle state in the residual nucleus, and is also known as the spectroscopic factor. Henceforth, the differential cross-section in the case where $\gamma_{n'j'l'}$ is unity will be referred to as the DWBA cross-section.
+
+\subsection{Optical Model} \label{ssec:opticalModel}
+
+
+To model $V$ and $U$, the optical model was used. The optical model treats the target nucleus similarly to a lens to the "light" ray of the beam. It absorbs some of the beam, scatters some, and transmits some. Optical models describe elastic scattering, because it is the dominant scattering channel at energies used in transfer reaction studies. However, corrections must be applied to account for scattering into inelastic channels.
+
+The optical model potential employs a mean-field potential similar to a shell model. The form of this mean field potential is a Woods-Saxon $f(r)$ with a spin-orbit term. This has an imaginary component to account for the flux out of the elastic channel. There is also an imaginary surface term to account for  low-level collective excitations. As well as the nuclear potential, the Coulomb potential $V_C(r)$ is also considered.
+
+The general expression for the total optical model potential is
+
+\begin{equation}
+\begin{split}
+V(r) = \bigg [ V_C(r) - V_rf(r) + V_{so}\frac{1}{r}\frac{\partial f(r)}{\partial r}({\bf \hat{L} \cdot \hat{S}}) \bigg ] \\
+	+ i \bigg [ -W_rf(r) + W_{so}\frac{1}{r}\frac{\partial f(r)}{\partial r}({\bf \hat{L} \cdot \hat{S}}) + 4W_s \frac{\partial f(r)}{\partial r} \bigg ] \mathrm{,}
+\end{split}
+\end{equation}
+
+where coeffiecients $V_i$ and $W_i$ are the magnitudes of the potentials. The suffixes $i =  v, s, so$ stand for volume, surface, and spin-orbit respectively.
+
+These coefficients, plus the diffuseness and radii, are the \textit{optical model parameters}. They are determined experimentally. This is done by measuring elastic scattering cross-sections over a range of nuclei and energies, and fitting  the optical model parameters to best fit the data.
+
+This can be done over a small range of nuclides and energies for a local fit, or a large number for a global fit. Local fits sometimes only use one nuclide and energy. The advantages of using global paramaters is that the fit parameters are more reliable for a larger number of data points, and can be used for a large range of reactions and energies. The advantage of local parameters is that they may capture local fluctuations in parameters that may be smoothed over by a global fit. In this study, global parameters from a study by An and Cai\cite{ancai} were used for deuterons, and global parameters for protons from a study by K\"oning and Delaroche\cite{koningdelaroche} were used.
+
+
+\subsection{Spectroscopic Factors and Occupancies}
+
+The residual interactions fragment the single-particle strength across multiple excitation energies. However, the total single-particle strength can be recovered. This is done using spectroscopic factors and the \textit{Macfarlane and French sum rules}.
+
+The spectroscopic factor is, as seen in section~\ref{ssec:DWBA}, a function which describes the overlap between the final state, and the target nucleus with a nucleon outside of it. It can be calculated experimentally by comparing the cross-section to a calculated cross-section assuming a pure single-particle state. Quantatively, this is
+
+\begin{equation}
+\bigg ( \frac{\mathrm{d} \sigma}{\mathrm{d} \Omega} \bigg )_{\mathrm{expt}} = C^2S \bigg ( \frac{\mathrm{d} \sigma}{\mathrm{d} \Omega} \bigg )_{\mathrm{DWBA}}\mathrm{,}
+\end{equation}
+
+where $S$ is the spectroscopic factor for the state and $C^2$ are isospin Clebsch-Gordan coefficients.
+
+$C^2S$ can therefore be extracted by comparing the DWBA cross-section for a reaction to a state with the experimental cross-section. The cross-sections are $\ell$ dependent, so the $\ell$ for that state must be determined to obtain an accurate spectroscopic factor.
+
+If all of the spectroscopic factors for a given total angular momentum $j$ are summed up, the occupancy (for removal reactions) or vacancy (for addition reactions) of the corresponding shell  can be deduced. These are the Macfarlane and French sum rules\cite{macfarlanefrench}. The occupancies are given by
+
+\begin{equation}
+\mathrm{Occupancy} = \sum_{i}C^2S_i^{(\mathrm{r})}\mathrm{,}
+\end{equation}
+
+where $S_i^{(\mathrm{r})}$ are the spectroscopic factors for each state in a removal reaction. The vacancies are given by
+
+\begin{equation}
+\mathrm{Vacancy} = \sum_{i}(2j+1)C^2S_i^{(\mathrm{a})}\mathrm{,}
+\end{equation}
+
+where this time $S_i^{(\mathrm{a})}$ are the spectroscopic factors for addition. The $(2j + 1)$ comes from the fact that neutrons can be added into any of the available states in the orbital. For a full orbital, the occupancy is $2j + 1$.
